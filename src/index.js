@@ -21,14 +21,16 @@ const dockerHub = "https://registry-1.docker.io";
 // };
 
 const routes = {
-  "docker.dream-pillows.top.com": "https://registry-1.docker.io",
-  "quay.dream-pillows.top.com": "https://quay.io",
-  "gcr.dream-pillows.top.com": "https://gcr.io",
-  "k8s-gcr.dream-pillows.top.com": "https://k8s.gcr.io",
-  "k8s.dream-pillows.top.com": "https://registry.k8s.io",
-  "ghcr.dream-pillows.top.com": "https://ghcr.io",
-  "cloudsmith.dream-pillows.top.com": "https://docker.cloudsmith.io",
+  "docker.dream-pillows.top": "https://registry-1.docker.io",
+  "quay.dream-pillows.top": "https://quay.io",
+  "gcr.dream-pillows.top": "https://gcr.io",
+  "k8s-gcr.dream-pillows.top": "https://k8s.gcr.io",
+  "k8s.dream-pillows.top": "https://registry.k8s.io",
+  "ghcr.dream-pillows.top": "https://ghcr.io",
+  "cloudsmith.dream-pillows.top": "https://docker.cloudsmith.io",
 };
+
+
 
 
 
