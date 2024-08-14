@@ -33,13 +33,18 @@ const dockerHub = "https://registry-1.docker.io";
 // };
 
 const routes = {
-  "docker.dream-pillows.top": "https://registry-1.docker.io",
+  // production
+  "docker.dream-pillows.top": dockerHub,
   "quay.dream-pillows.top": "https://quay.io",
   "gcr.dream-pillows.top": "https://gcr.io",
   "k8s-gcr.dream-pillows.top": "https://k8s.gcr.io",
   "k8s.dream-pillows.top": "https://registry.k8s.io",
   "ghcr.dream-pillows.top": "https://ghcr.io",
   "cloudsmith.dream-pillows.top": "https://docker.cloudsmith.io",
+  "ecr.dream-pillows.top": "https://public.ecr.aws",
+ 
+  // staging
+  "docker-staging.dream-pillows.top": dockerHub,
 };
 
 
