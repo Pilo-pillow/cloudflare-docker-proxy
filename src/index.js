@@ -5,20 +5,32 @@ addEventListener("fetch", (event) => {
 
 const dockerHub = "https://registry-1.docker.io";
 
-const routes = {
-  // production
-  "docker.libcuda.so": dockerHub,
-  "quay.libcuda.so": "https://quay.io",
-  "gcr.libcuda.so": "https://gcr.io",
-  "k8s-gcr.libcuda.so": "https://k8s.gcr.io",
-  "k8s.libcuda.so": "https://registry.k8s.io",
-  "ghcr.libcuda.so": "https://ghcr.io",
-  "cloudsmith.libcuda.so": "https://docker.cloudsmith.io",
-  "ecr.libcuda.so": "https://public.ecr.aws",
+// const routes = {
+//   // production
+//   "docker.libcuda.so": dockerHub,
+//   "quay.libcuda.so": "https://quay.io",
+//   "gcr.libcuda.so": "https://gcr.io",
+//   "k8s-gcr.libcuda.so": "https://k8s.gcr.io",
+//   "k8s.libcuda.so": "https://registry.k8s.io",
+//   "ghcr.libcuda.so": "https://ghcr.io",
+//   "cloudsmith.libcuda.so": "https://docker.cloudsmith.io",
+//   "ecr.libcuda.so": "https://public.ecr.aws",
 
-  // staging
-  "docker-staging.libcuda.so": dockerHub,
+//   // staging
+//   "docker-staging.libcuda.so": dockerHub,
+// };
+
+const routes = {
+  "docker.dream-pillows.top.com": "https://registry-1.docker.io",
+  "quay.dream-pillows.top.com": "https://quay.io",
+  "gcr.dream-pillows.top.com": "https://gcr.io",
+  "k8s-gcr.dream-pillows.top.com": "https://k8s.gcr.io",
+  "k8s.dream-pillows.top.com": "https://registry.k8s.io",
+  "ghcr.dream-pillows.top.com": "https://ghcr.io",
+  "cloudsmith.dream-pillows.top.com": "https://docker.cloudsmith.io",
 };
+
+
 
 function routeByHosts(host) {
   if (host in routes) {
